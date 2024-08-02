@@ -16,10 +16,8 @@
 package org.codehaus.jettison.mapped;
 
 import java.util.Set;
-
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.stream.XMLStreamException;
-
 import org.codehaus.jettison.AbstractXMLStreamReader;
 import org.codehaus.jettison.Node;
 import org.codehaus.jettison.json.JSONArray;
@@ -27,6 +25,7 @@ import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 import org.codehaus.jettison.util.FastStack;
 
+@SuppressWarnings({"rawtypes", "unchecked"})
 public class MappedXMLStreamReader extends AbstractXMLStreamReader {
     private FastStack nodes;
     private String currentValue;
